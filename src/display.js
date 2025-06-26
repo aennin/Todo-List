@@ -7,7 +7,7 @@ export function displayProject(title) {
     const projectItem = document.createElement("div");
     projectItem.classList.add("project-item");
     projectItem.innerHTML = `
-    <h3>${title}</h3>
+    <h3 class="title-header">${title}</h3>
     <button class="delete-btn">X</button>
     `;
 
