@@ -94,8 +94,8 @@ export function displayProjectTask(title) {
     taskBlock.classList.add("task");
     taskBlock.innerHTML = `
     <div class="task-header">
-    <h2>${title}</h2>
-    <button class="add-task-btn">Add Task</button>
+    <div><h2>${title}</h2></div>
+    <div><button class="add-task-btn">Add Task</button></div>
     </div>
     `;
 
