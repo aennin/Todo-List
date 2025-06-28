@@ -8,11 +8,11 @@ A responsive and interactive To-Do List web application that allows users to cre
     - Delete projects when no longer needed
 
 - **Task Management**
-Add tasks with name, due date, priority, and notes
-Edit existing tasks
-Delete tasks with confirmation dialog
-Toggle task completion status
-Collapsible task details view
+    - Add tasks with name, due date, priority, and notes
+    - Edit existing tasks
+    - Delete tasks with confirmation dialog
+    - Toggle task completion status
+    - Collapsible task details view
 
 - **Data Persistence**
     - All data saved to localStorage
@@ -40,16 +40,19 @@ Collapsible task details view
    cd todo-list
 
 2. **Install dependencies**
-npm install
+    ```bash
+    npm install
 
 3. **Run the development server**
-npm start
+    ```bash
+    npm start
 
 4. **Build for production**
-npm run build
+    ```bash
+    npm run build
 
 ## Project Structure
-
+```
 ├── src/
 │   ├── display.js       # Handles DOM updates and rendering
 │   ├── index.js         # Main JavaScript entry point
@@ -67,7 +70,7 @@ npm run build
 ├── webpack.common.js    # Shared Webpack config
 ├── webpack.dev.js       # Development Webpack config
 └── webpack.prod.js      # Production Webpack config
-
+```
 ## Planned Improvements
 - Add search and filter functionality
 - Add drag-and-drop task reordering
