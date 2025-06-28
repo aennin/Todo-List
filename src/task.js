@@ -21,7 +21,7 @@ export function displayProjectTask(title) {
         compactView.classList.add("compact-view");
         compactView.innerHTML = `
         <input type="checkbox" id="completed" class="completed" ${task.completed ? "checked" : ""}>
-        <span class="task-name"><strong>${task.name}</strong></span>
+        <span class="task-name"><strong>${task.name} </strong></span>
         <span class="due-date">Due: ${task.dueDate}</span>
         <button class="details-btn">Details</button>
         `
@@ -90,20 +90,17 @@ export function displayProjectTask(title) {
     });
     
     // Display selected project title + button
-    const taskBlock = document.createElement("div");
-    taskBlock.classList.add("task");
-    taskBlock.innerHTML = `
-    <div class="task-header">
-    <div><h2>${title}</h2></div>
+    taskContent.classList.add("task");
+    taskContent.innerHTML = `
+    <div id="pro-title">${title}</div>
     <div><button class="add-task-btn">Add Task</button></div>
-    </div>
     `;
 
     // Add task
     taskHeading.innerHTML = `Add task to ${title}`;
 
     // Open dialog on button click
-    const addTask = taskBlock.querySelector(".add-task-btn");
+    const addTask = taskContent.querySelector(".add-task-btn");
     addTask.addEventListener("click", () =>{
         taskDialog.showModal()
     })
@@ -146,7 +143,5 @@ export function displayProjectTask(title) {
     cancelTask.addEventListener("click", () => {
         taskDialog.close();
     });
-
-    taskContent.appendChild(taskBlock);
 
 }
